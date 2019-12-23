@@ -1,0 +1,76 @@
+{% extends 'css_js/base.html' %}
+{% load static %}
+{% block extra %}
+<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDbr6x5lbYq7WTHCdzY3f8VLGzoIGLXfJM&callback=init_map'></script>
+<link rel="stylesheet" href="{% static 'location/css/location.css' %}">
+<script type="text/javascript" src="{% static 'location/js/location.js' %}"></script>
+{% endblock %}
+
+{% block main_content %}
+
+<div class="container my-5 py-5 z-depth-1">
+
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center dark-grey-text">
+ 
+      <!--Google map-->
+      <div class="row d-flex mb-5">
+        <div id="location-map">
+            {% include 'location/partials/location.html' with location=contact.location %}
+        </div>
+      </div>
+      
+      <!--Google Maps-->
+
+      <!--Grid row-->
+      <div class="row d-flex mb-5">
+
+        <!--Grid column-->
+        
+        <div class="col-md">
+
+          <i class="fas fa-map-marker-alt fa-2x blue-text"></i>
+
+          <p class="font-weight-bold my-3">Address</p>
+
+          <p class="text-muted">{{ contact.location.address}}</p>
+
+        </div>
+        
+        <!--Grid column-->
+
+        <!--Grid column-->
+    
+        <div class="col-md">
+
+            <i class="fas fa-phone fa-2x blue-text"></i>
+
+            <p class="font-weight-bold my-3">Phone number</p>
+  
+            <p class="text-muted">{{ contact.phone }}</p>
+
+        </div>
+    
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md">
+
+            <i class="fas fa-envelope fa-2x blue-text"></i>
+
+            <p class="font-weight-bold my-3">E-mail</p>
+  
+            <p class="text-muted">{{ contact.email }}</p>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+    </section>
+    <!--Section: Content-->
+
+</div>
+
+{% endblock %}
