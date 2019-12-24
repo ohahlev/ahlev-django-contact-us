@@ -58,6 +58,7 @@ MEDIA_URL = '/medias/'
 ## screenshots
 ### frontend: contact us page
 ![](screenshot/contact_us_frontend.png)
+This is why django contact us applicaiton depends on [ahlev-django-location](https://github.com/ohahlev/ahlev-django-location.git)
 
 ### backend: contact us management
 ![](screenshot/contact_us_backend1.png)
@@ -67,3 +68,4 @@ MEDIA_URL = '/medias/'
 
 ### backend: edit contact us info
 ![](screenshot/contact_us_backend3.png)
+The contact us model links to the location model of [ahlev-django-location](https://github.com/ohahlev/ahlev-django-location.git)
