@@ -59,11 +59,11 @@ MEDIA_URL = '/medias/'
 ### frontend: contact us page
 ![](screenshot/contact_us_frontend.png)
 
-### backend: home page
+### backend: contact us management
 ![](screenshot/contact_us_backend1.png)
 
-### backend: list about us
+### backend: list contact us info
 ![](screenshot/contact_us_backend2.png)
 
-### backend: edit about us
+### backend: edit contact us info
 ![](screenshot/contact_us_backend3.png)
