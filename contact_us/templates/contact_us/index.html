@@ -1,8 +1,11 @@
 {% extends 'css_js/base.html' %}
 {% load static %}
-{% block extra %}
-<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDbr6x5lbYq7WTHCdzY3f8VLGzoIGLXfJM&callback=init_map'></script>
+{% block extracss %}
 <link rel="stylesheet" href="{% static 'location/css/location.css' %}">
+<link rel="stylesheet" href="{% static 'contact_us/css/contact_us.css' %}">
+{% endblock %}
+{% block extrajs %}
+<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDbr6x5lbYq7WTHCdzY3f8VLGzoIGLXfJM&callback=init_map'></script>
 <script type="text/javascript" src="{% static 'location/js/location.js' %}"></script>
 {% endblock %}
 
@@ -15,9 +18,7 @@
  
       <!--Google map-->
       <div class="row d-flex mb-5">
-        <div id="location-map">
             {% include 'location/partials/location.html' with location=contact.location %}
-        </div>
       </div>
       
       <!--Google Maps-->
