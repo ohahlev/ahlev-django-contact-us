@@ -33,7 +33,7 @@ pip install dist/ahlev-django-contact-us-0.0.1.tar.gz
 
 ## install from pypi
 ### go to the project directory and install from pypi
-[ahlev-django-about-us](https://pypi.org/project/ahlev-django-about-us/)
+[ahlev-django-contact-us](https://pypi.org/project/ahlev-django-contact-us/)
 
 ## project configuration
 ### update settings.py as the following
