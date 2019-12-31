@@ -1,5 +1,5 @@
 # DJANGO CONTACT US APPLICATION
-![pypi](https://img.shields.io/pypi/v/ahlev-django-about-us) ![pypi](https://img.shields.io/pypi/status/ahlev-django-about-us)
+![pypi](https://img.shields.io/pypi/v/ahlev-django-contact-us) ![pypi](https://img.shields.io/pypi/status/ahlev-django-contact-us)
 
 This django application is used to show the contact us page.
 
@@ -44,12 +44,11 @@ INSTALLED_APPS = [
 ]
 ```
 
-### add these lines to the end of settings.py if they don't exist yet
+### add these lines to the end of settings.py
 ```
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
-#STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = '/medias/'
