@@ -1,11 +1,14 @@
 # DJANGO CONTACT US APPLICATION
+![pypi](https://img.shields.io/pypi/v/ahlev-django-about-us) ![pypi](https://img.shields.io/pypi/status/ahlev-django-about-us)
+
+This django application is used to show the contact us page.
+
+## prerequisites
 The instructions below assume that you have a django project already set up; and a python virtual environment already installed and activated. 
 
 ## styles
-All ahlev-django applications are using styles from [mdbootstrap.com](https://mdbootstrap.com), so please make sure you install 
-ahlev-django-css-js first before proceeding to the next step.
-Here is its repository.
-[ahlev-django-css-js](https://github.com/ohahlev/ahlev-django-css-js.git)
+All ahlev-django applications are using styles from [mdbootstrap.com](https://mdbootstrap.com), so please make sure you install [ahlev-django-css-js](https://github.com/ohahlev/ahlev-django-css-js.git) first.
+
 
 ## install from this repository
 ### clone
@@ -30,12 +33,9 @@ pip install dist/ahlev-django-contact-us-0.0.1.tar.gz
 
 ## install from pypi
 ### go to the project directory and install from pypi
-```
-pip install -i https://test.pypi.org/simple/ ahlev-django-contact-us 
-```
+[ahlev-django-about-us](https://pypi.org/project/ahlev-django-about-us/)
 
 ## project configuration
-
 ### update settings.py as the following
 ```
 INSTALLED_APPS = [
