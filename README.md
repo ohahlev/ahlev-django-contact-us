@@ -23,12 +23,19 @@ cd ahlev-django-contact-us
 
 ### create installer package
 ```
-python3 setup.py sdist
+make package
 ```
 
-### go to project directory
+### install package
+Let's say ahlev-django-contact-us directory is in the same level as the project directory.
+
+cd into project directory
 ```
-pip install dist/ahlev-django-contact-us-0.0.1.tar.gz
+cd ../my_project_dir
+```
+install ahlev-django-contact-us from the project directory
+```
+pip install ../ahlev-django-contact-us/dist/ahlev-django-contact-us-0.0.1.tar.gz
 ```
 
 ## install from pypi
